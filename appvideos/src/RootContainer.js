@@ -8,7 +8,8 @@ class RootContainer extends Component {
         super(props);
         this.state = {
             numChildren: [],
-            colmuns: []
+            colmuns: [],
+            columnsLength: 0
         };
     }
 
@@ -16,7 +17,7 @@ class RootContainer extends Component {
         console.log("props.removeColumn:", props.removeColumn);
         return {
             numChildren: props.count,
-            colmuns: props.colmuns
+            columnsLength: props.colmuns.length
         };
     }
 
@@ -32,10 +33,9 @@ class RootContainer extends Component {
 
         for (var i = 0; i < this.state.numChildren; i += 1) {
             console.log(this.props.colmuns.indexOf(i));
-            if (this.props.colmuns.indexOf(i) > 0) {
-                continue;
+            if (this.props.colmuns.indexOf(i) < 0) {
+                children.push(<Search key={i} number={i} />);
             }
-            children.push(<Search key={i} number={i} />);
         }
         return <div>{children}</div>;
     }

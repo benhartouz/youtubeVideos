@@ -14,7 +14,7 @@ export const searchColumn = (state = 1, action) => {
 export const removeColumn = (state = [], action) => {
     switch (action.type) {
         case REMOVE_COLUMN_YOUTUBE:
-            return action.id;
+            return [...state, action.id];
             break;
         default:
             return state;

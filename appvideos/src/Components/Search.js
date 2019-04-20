@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import YTSearch from "youtube-api-search";
+import YTSearch from "../YoutubeApi";
 import Results from "../Components/Results";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -77,8 +77,9 @@ class Search extends Component {
                     </button>
                     <button
                         onClick={() => {
-                            this.props.removedColumn.push(this.props.number);
-                            this.props.removeColumn(this.props.removedColumn);
+                            //this.props.removedColumn.push(this.props.number);
+                            this.props.removeColumn(this.props.number);
+                            //this.props.addColumn(this.props.count + 1);
                         }}
                     >
                         Delete

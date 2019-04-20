@@ -8,7 +8,15 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
-                <RootContainer />
+                <div
+                    style={{
+                        overflowX: "scroll",
+                        overflowY: "hidden",
+                        whiteSpace: "nowrap"
+                    }}
+                >
+                    <RootContainer />
+                </div>
             </Provider>
         );
     }
