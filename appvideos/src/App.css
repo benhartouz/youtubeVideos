@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#videoElement{
+  text-decoration: none;
+  width: 600px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid #cccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#videoElement .picture{
+ float: left;
+ margin-right: 10px;
+}
+#videoElement .body{
+  float: left;
+}
+#videoElement .body h3 {
+  color: #000;
+  display: block;
+  max-height: 4.8rem;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+}
+
+#videoElement .body .description{
+  color: #ccc;
+    /* padding-top: 8px; */
+    margin-bottom: 8px;
+    display: block;
+    /* line-height: 1.8rem; */
+    /* max-height: 3.6rem; */
+    /* overflow: hidden; */
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: none;
+    width: 400px;
+}
