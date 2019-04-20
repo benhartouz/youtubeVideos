@@ -1,40 +1,15 @@
 import React, { Component } from "react";
-import Results from "./Components/Results";
-import Search from "./Components/Search";
-
+import RootContainer from "./RootContainer";
+import { Provider } from "react-redux";
+import createStore from "./Redux/store";
 import "./App.css";
-
+const store = createStore;
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            numChildren: []
-        };
-    }
-    addNewSearch = () => {};
-
-    onAddChild = () => {
-        this.setState({
-            numChildren: this.state.numChildren + 1
-        });
-    };
     render() {
-        const children = [];
-
-        for (var i = 0; i < this.state.numChildren; i += 1) {
-            children.push(<Search key={i} number={i} />);
-        }
         return (
-            <div>
-                <a
-                    onClick={() => {
-                        this.onAddChild();
-                    }}
-                >
-                    ajout
-                </a>
-                {children}
-            </div>
+            <Provider store={store}>
+                <RootContainer />
+            </Provider>
         );
     }
 }

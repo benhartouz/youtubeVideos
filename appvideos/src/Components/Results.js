@@ -7,7 +7,6 @@ class Results extends Component {
     }
 
     render() {
-        console.log(this.props.results);
         let results = this.props.results.map(element => {
             return <Youtube youtube={element} />;
         });

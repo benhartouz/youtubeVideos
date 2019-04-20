@@ -36,7 +36,7 @@
 
 #videoElement{
   text-decoration: none;
-  width: 600px;
+  width: 377px;
   overflow: hidden;
   display: block;
   border: 1px solid #cccc;
@@ -50,30 +50,30 @@
 }
 #videoElement .body{
   float: left;
+  width: 239px;
 }
 #videoElement .body h3 {
   color: #000;
   display: block;
-  max-height: 4.8rem;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 2.4rem;
   text-overflow: ellipsis;
   white-space: normal;
   display: -webkit-box;
+  font-weight: 800;
 }
 
 #videoElement .body .description{
   color: #ccc;
-    /* padding-top: 8px; */
-    margin-bottom: 8px;
-    display: block;
-    /* line-height: 1.8rem; */
-    /* max-height: 3.6rem; */
-    /* overflow: hidden; */
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-transform: none;
-    width: 400px;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 9px;
+  text-transform: none;
+  width: 249px;
+  text-align: justify;
+}
+
+#videoElement .publish{
+ font-size: 10px;
 }

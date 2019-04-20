@@ -5,11 +5,8 @@ class Youtube extends Component {
         super();
     }
 
-    componentDidMount() {
-        console.log("element", this.props.youtube);
-    }
+    componentDidMount() {}
     render() {
-        console.log("this.props.youtube:", this.props.youtube);
         let img = this.props.youtube.snippet.thumbnails.default.url;
         let title = this.props.youtube.snippet.title;
         let desc = this.props.youtube.snippet.description;
@@ -24,7 +21,7 @@ class Youtube extends Component {
                 <div className="body">
                     <h3>{title}</h3>
                     <p className="description">{desc}</p>
-                    <p>{publishDate}</p>
+                    <p className="publish">{publishDate}</p>
                 </div>
             </a>
         );
