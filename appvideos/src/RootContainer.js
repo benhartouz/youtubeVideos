@@ -37,7 +37,7 @@ class RootContainer extends Component {
                 children.push(<Search key={i} number={i} />);
             }
         }
-        return <div>{children}</div>;
+        return <div id="container">{children}</div>;
     }
 }
 
